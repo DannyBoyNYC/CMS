@@ -1,6 +1,65 @@
-# Gatsby CMS
+# Gatsby CMS Preso
 
-## Sanity
+## About me
+* Not new to React or CMS development but new-ish to Gatsby
+* Previously in the power canyons of Manhattan, now in a small adtech startup
+* Over 25 years at NYU, currently teaching a certificate in Front End dev 
+* Starts with Eleventy, ends with Gatsby
+
+## Headless CMS
+* A traditional CMS is a single website (think WordPress, Drupal … )
+* A headless CMS is a backend that is decoupled from its frontend
+
+## Plenty of Options 
+* Headless WordPress
+* AWS Using Docker
+* Contently, Cosmic JS …  https://headlesscms.org
+* Contentful, Sanity, Netlfiy CMS
+
+## Contentful 
+
+`https://www.contentful.com/`
+
+Used for: https://dev-go.getperksy.com/
+
+Pros
+* Web interface schema is simple
+* Easy to integrate into an existing site
+
+Cons
+* Additional work for previews
+* No standalone app
+
+
+## Netlify CMS
+
+`https://www.netlifycms.org`
+
+Installed the starter pack first. A 'mono-repo' that includes both the Gatsby site and the CMS. 
+
+Pros
+* Good integration with Netlify
+* Good integration with Cloudinary for images
+
+Cons
+* Difficult to incorporate into an exiting site (much config.yml)
+
+
+## Sanity CMS
+
+`http://sanity.io`
+
+The packaged demo was interesting - created a Netlify/Gatsby site and a separate Netlify site for the Studio package.
+
+Pros
+* OSS Studio app 
+* Option to deploy the Studio app to Sanity or Netlify
+* Easy to create schema in js
+
+Cons
+* Potential issues with interoperability between Gatsby's gql and its own?
+
+### Demo
 
 Install Sanity CLI and initialize a new studio project - 'recipes-studio'
 
@@ -11,8 +70,8 @@ $ yarn start
 ```
 
 1. schemas in VSCode
-1. UI at http://localhost:3333
-1. create new posts and author
+2. UI at http://localhost:3333
+3. create new posts and author
 
 Deploy to Sanity
 
@@ -20,7 +79,7 @@ Deploy to Sanity
 
 And view at http://manage.sanity.io. Note the 'studio' link
 
-## Gatsby
+### Gatsby
 
 `$ npm i -g gatsby-cli && gatsby new`
 
@@ -89,7 +148,7 @@ query MyQuery {
 }
 ```
 
-### Creating a page in Gatsby JS
+### Creating a Page
 
 [gql Fragments](https://graphql.org/learn/queries/#fragments) - https://www.gatsbyjs.org/docs/sourcing-from-sanity/#available-fragments
 
