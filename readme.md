@@ -20,7 +20,10 @@
 
 `https://www.contentful.com/`
 
-Used for: https://dev-go.getperksy.com/
+`https://dev-go.getperksy.com/`
+
+[REST API](https://cdn.contentful.com/spaces/b0r0shakboaj/environments/master/entries?access_token=Fz5gMRnfQsmmpyvqG30tpCkAPNCguSrdP-lSNdDI1UU)
+[Graphql API](http://localhost:8000/___graphql)
 
 Pros
 * Web interface schema is simple
@@ -30,6 +33,8 @@ Cons
 * Additional work for previews
 * No standalone app
 
+Since so much relies on it, your CI/CD pipeline is critical for user acceptance. 
+
 
 ## Netlify CMS
 
@@ -37,9 +42,12 @@ Cons
 
 Installed the starter pack first. A 'mono-repo' that includes both the Gatsby site and the CMS. 
 
+Packaged Demo - `yetanother-gatsby-starter-netlify-cms` - "/" and "admin"
+
 Pros
 * Good integration with Netlify
 * Good integration with Cloudinary for images
+* co-location in your repo makes devloping previews easy
 
 Cons
 * Difficult to incorporate into an exiting site (much config.yml)
@@ -57,7 +65,7 @@ Pros
 * Easy to create schema in js
 
 Cons
-* Potential issues with interoperability between Gatsby's gql and its own?
+* Potential issues with interoperability between Gatsby's gql and Sanity gql?
 
 ### Demo
 
