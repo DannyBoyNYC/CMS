@@ -22,10 +22,6 @@ Continuous integration and continuous delivery - typical of smaller organization
 Enterprises typically have longer release cycles
 **&#8756;** static websites often relegated to non mission critical content
 
-Barrier: static site build tooling and Github-based workflow:
-
-> "No matter how fast your static build tool is, there will always be some delay between the time you publish/update new content and the time it appears.”
-
 ## Contentful 
 
 https://www.contentful.com/ - Content model, assets & content
@@ -85,23 +81,28 @@ Pros
 Cons
 * [Additional work for previews](https://www.contentful.com/r/knowledgebase/setup-content-preview/)
 * No standalone app 
+* Poor demo package - never got it to run
 
-THe speed of your CI/CD pipeline is critical for user acceptance.
+The speed of your CI/CD pipeline is critical for user acceptance.
 
 My repo is hosted on GitLab and hosted on Amazon S3 - worse performance than Netlify (gitlab-ci.yml).
+
+Barrier: static site build tooling and Github-based workflow:
+
+> "No matter how fast your static build tool is, there will always be some delay between the time you publish/update new content and the time it appears.”
 
 ## Netlify CMS
 
 https://www.netlifycms.org
 
-Install a [starter pack](https://www.netlifycms.org/docs/start-with-a-template/). 
+The best way to evaluate a headless CMS is to install a [starter pack](https://www.netlifycms.org/docs/start-with-a-template/). 
 
-A 'mono-repo' that includes both the Gatsby site and the CMS. 
+Netlify CMS provides a 'mono-repo' that includes both the Gatsby site and the CMS. 
 
-Start Pack Demo 
-* [Deployed](https://dreamy-pare-655a09.netlify.com/) 
-* [Deployed admin](https://dreamy-pare-655a09.netlify.com/admin/#/collections/blog)
-* [Github](https://github.com/DannyBoyNYC/yetanother-gatsby-starter-netlify-cms) 
+Starter Pack Demo 
+* [Sample blog](https://dreamy-pare-655a09.netlify.com/) 
+* [Sample admin](https://dreamy-pare-655a09.netlify.com/admin/#/collections/blog)
+* [Github 'mono-repo'](https://github.com/DannyBoyNYC/yetanother-gatsby-starter-netlify-cms) 
 * [Github: admin](https://github.com/DannyBoyNYC/yetanother-gatsby-starter-netlify-cms/tree/master/static/admin)
 * [Github: react components](https://github.com/DannyBoyNYC/yetanother-gatsby-starter-netlify-cms/tree/master/src/cms)
 
@@ -128,7 +129,8 @@ The packaged demo was [interesting](https://www.sanity.io/create?taskId=VtGOgCJO
 Pros
 * [OSS Studio app](https://www.sanity.io/studio)
 * Easy deployment of the [Studio app to Sanity](https://manage.sanity.io)
-* Simple [schemas](https://github.com/DannyBoyNYC/yetanother-sanity-gatsby-blog/blob/master/studio/schemas/documents/post.js)
+* Sensible [schemas](https://github.com/DannyBoyNYC/yetanother-sanity-gatsby-blog/blob/master/studio/schemas/documents/post.js)
+* More (and better) out-of-the-box [samples](https://www.sanity.io/create/)
 
 Cons
 * YAQL - "Yet Another [Query Language](https://www.sanity.io/docs/overview-groq)"
