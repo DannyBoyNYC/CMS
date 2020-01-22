@@ -28,12 +28,15 @@
 Pros
 * Web interface schema is simple
 * Easy to integrate into an existing site
+* REST API - should you need it
 
 Cons
 * Additional work for previews
-* No standalone app
+* No standalone app 
 
-Since so much relies on it, your CI/CD pipeline is critical for user acceptance. 
+This repo is hosted on GitLab and hosted on Amazon S3 - worse performance than Netlify (gitlab-ci.yml).
+
+Since so much relies on it (previews), your CI/CD pipeline is critical for user acceptance.
 
 
 ## Netlify CMS
