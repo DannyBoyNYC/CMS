@@ -1,14 +1,20 @@
-# Gatsby CMS Preso
+# Gatsby CMS 
 
 ## About me
-* Not new to React or CMS development but new-ish to Gatsby
-* Previously in the power canyons of Manhattan, now in a small adtech startup
+* Not new to React but new-ish to Gatsby
+* Previously in the power canyons of midtown, now in a small adtech startup
 * Over 25 years at NYU, currently teaching a certificate in Front End dev 
 * Starts with Eleventy, ends with Gatsby
 
 ## Headless CMS
 * A traditional CMS is a single website (think WordPress, Drupal … )
 * A headless CMS is a backend that is decoupled from its frontend
+
+Barrier: static site build tooling and Github-based workflow
+
+> No matter how fast your static build tool is, there will always be 
+> some delay between the time you publish/update new content 
+> and the time it appears.”
 
 ## Plenty of Options 
 * Headless WordPress
