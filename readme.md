@@ -10,17 +10,22 @@
 * A traditional CMS is a single website (think WordPress, Drupal … )
 * A headless CMS is a backend that is decoupled from its frontend
 
+## Plenty of Options 
+* Headless WordPress
+* AWS Using Docker
+* Contently, Cosmic JS …  https://headlesscms.org
+* Contentful, Sanity, Netlfiy CMS
+
 Barrier: static site build tooling and Github-based workflow
 
 > No matter how fast your static build tool is, there will always be 
 > some delay between the time you publish/update new content 
 > and the time it appears.”
 
-## Plenty of Options 
-* Headless WordPress
-* AWS Using Docker
-* Contently, Cosmic JS …  https://headlesscms.org
-* Contentful, Sanity, Netlfiy CMS
+## CI/CD
+Continuous integration and continuous delivery - typical of smaller organizations that move fast and check in small code changes rather than long release cycles.
+
+Enterprises typically have longer release cycles - Static websites often relegated to non mission critical content
 
 ## Contentful 
 
@@ -29,7 +34,49 @@ Barrier: static site build tooling and Github-based workflow
 `https://dev-go.getperksy.com/`
 
 [REST API](https://cdn.contentful.com/spaces/b0r0shakboaj/environments/master/entries?access_token=Fz5gMRnfQsmmpyvqG30tpCkAPNCguSrdP-lSNdDI1UU)
+
 [Graphql API](http://localhost:8000/___graphql)
+
+```js
+{
+    allContentfulNewsItem(sort: { fields: [newsDate], order: [DESC] }) {
+      edges {
+        node {
+          newsType
+          newsDate
+          headline
+          link
+          id
+          columnSpan
+          backgroundColor
+          backgroundImage {
+            file {
+              url
+            }
+          }
+          logo {
+            file {
+              url
+              details {
+                image {
+                  height
+                  width
+                }
+              }
+            }
+            title
+          }
+          image {
+            file {
+              url
+            }
+          }
+          imageRight
+        }
+      }
+    }
+  }
+```
 
 Pros
 * Web interface schema is simple
