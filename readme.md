@@ -16,15 +16,15 @@
 * [AWS Using Docker](https://hackernoon.com/headless-wordpress-cms-on-aws-b64c9da8b9b5)
 * Contentful, Netlfiy CMS, Sanity
 
-One barrier: static site build tooling and Github-based workflow:
-
-> "No matter how fast your static build tool is, there will always be some delay between the time you publish/update new content and the time it appears.”
-
 ## CI/CD
 Continuous integration and continuous delivery - typical of smaller organizations that move fast and check in small code changes rather than long release cycles.
 
 Enterprises typically have longer release cycles
 **&#8756;** static websites often relegated to non mission critical content
+
+Barrier: static site build tooling and Github-based workflow:
+
+> "No matter how fast your static build tool is, there will always be some delay between the time you publish/update new content and the time it appears.”
 
 ## Contentful 
 
